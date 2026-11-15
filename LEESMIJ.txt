@@ -1,0 +1,10 @@
+KLAVERJAS – GITHUB PAGES
+
+Upload ALLE bestanden uit deze map naar de ROOT van repository gerrie-sabrina-klaverjas (of de afgesproken klaverjas-app repository) en commit naar main.
+GitHub Pages: Deploy from a branch > main > /(root).
+
+Open daarna de GitHub Pages URL in Safari op de iPhone. Gebruik Delen > Zet op beginscherm.
+
+De app bewaart spelgegevens lokaal in de browser via localStorage. Wis Safari-websitegegevens niet. Maak regelmatig een back-up via Beheer.
+
+De bestaande app-opslagcode KEY='klaverjas_app_v1' is behouden. Deze build voegt de ontbrekende tweekoloms-wrapper voor WIJ/ZIJ toe en een compacte iPhone-weergave. De spelregels/rekenfuncties zijn verder overgenomen uit de aangeleverde versie 1.7.
