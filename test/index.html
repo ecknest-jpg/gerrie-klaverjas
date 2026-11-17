@@ -530,6 +530,7 @@ function restoreLastRound(skipConfirm=false){
  else flags={nat:last.reason==='nat'?last.nat:null,verz:last.reason==='verz'?last.verz:null,pit:last.reason==='pit'?last.pit:null};
  save();render();
  document.getElementById('maker').value=last.maker||nextMaker();
+ const turn=document.getElementById('turnPill');if(turn)turn.textContent='Troefbeurt · '+document.getElementById('maker').value.toUpperCase();
  renderInputs();
  document.getElementById('pointswij').value=String(last.cardWij??'');
  document.getElementById('pointszij').value=String(last.cardZij??'');
@@ -579,6 +580,8 @@ function newPot(){
   if(new Set(ids).size!==4){toast('Selecteer iedere speler één keer.');return}
   const selectedMode=['vrienden','familie','zonder'].includes(document.getElementById('potMode').value)?document.getElementById('potMode').value:'vrienden';
   activeMode=selectedMode;
+  historyMode=selectedMode;
+  if(selectedMode!=='zonder')leaderboardMode=selectedMode;
   db.current={id:Date.now(),date:new Date().toISOString(),mode:selectedMode,teams:{wij:[db.players[+ids[0]],db.players[+ids[1]]],zij:[db.players[+ids[2]],db.players[+ids[3]]]},rounds:[],finished:false,winner:null};
   document.getElementById('modal').classList.remove('show');
   roem={wij:[],zij:[]};flags={nat:null,verz:null,pit:null};
