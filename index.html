@@ -7,9 +7,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Klaverjas">
 <meta name="mobile-web-app-capable" content="yes">
-<link rel="manifest" href="manifest.webmanifest">
+<link rel="manifest" href="./manifest.webmanifest">
 <link rel="apple-touch-icon" href="icon-192.png">
-<title>Klaverjas – score & klassement · potje annuleren 2.13</title>
+<title>Klaverjas 2.17 – statistieken en uitslag delen</title>
 <style>
 :root{--bg:#f3f5f8;--card:#fff;--ink:#172033;--muted:#667085;--line:#e4e8ef;--blue:#365cf5;--blue2:#eaf0ff;--green:#16845b;--greenbg:#e8f6ef;--red:#d83c55;--redbg:#fff0f2;--amber:#a86b00;--amberbg:#fff5df;--shadow:0 8px 28px rgba(20,35,60,.07)}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:15px}button,input,select{font:inherit}button{cursor:pointer;border:0} .app{max-width:1040px;margin:auto;padding:16px 16px 42px}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}.brand{font-size:21px;font-weight:800;letter-spacing:-.5px}.brand small{display:block;font-size:10px;color:var(--muted);letter-spacing:1.4px;margin-top:3px}.top-actions{display:flex;gap:8px}.iconbtn,.tab{background:white;border:1px solid var(--line);border-radius:12px;padding:10px 12px;color:var(--ink);font-weight:650}.tabs{display:flex;gap:7px;overflow:auto;margin:0 0 14px}.tab{white-space:nowrap;font-size:13px}.tab.active{background:var(--blue);border-color:var(--blue);color:#fff}.panel{display:none}.panel.active{display:block}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:16px;margin-bottom:14px}.eyebrow{font-size:10px;font-weight:800;letter-spacing:1.3px;color:var(--muted);text-transform:uppercase}.scorehead{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}.scorebox{background:#f7f8fb;border:1px solid var(--line);border-radius:16px;padding:13px}.scorebox .teamname{font-weight:750;font-size:14px}.score{font-size:34px;font-weight:850;letter-spacing:-1px;line-height:1.15;margin:8px 0 4px;font-variant-numeric:tabular-nums}.progress{height:6px;background:#e5e9f0;border-radius:9px;overflow:hidden}.progress span{display:block;height:100%;background:var(--blue);border-radius:9px}.sub{font-size:11px;color:var(--muted);margin-top:5px}.section-title{font-size:17px;font-weight:800;letter-spacing:-.3px;margin:0 0 12px}.round-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.pill{border-radius:999px;background:var(--blue2);color:var(--blue);font-size:11px;font-weight:800;padding:6px 10px}.teams{display:grid;grid-template-columns:1fr 1fr;gap:10px}.team{min-width:0;border:1px solid var(--line);border-radius:17px;padding:12px;background:#fff}.team h3{font-size:15px;margin:0 0 3px}.team .members{font-size:11px;color:var(--muted);min-height:28px}.teamtotal{font-size:26px;font-weight:850;font-variant-numeric:tabular-nums;margin:8px 0}.field{width:100%;border:1px solid #d9dee8;background:#fff;border-radius:10px;padding:12px 10px;outline:none;min-width:0}.field:focus{border-color:var(--blue);box-shadow:0 0 0 3px #365cf51a}.field-label{font-size:11px;color:var(--muted);font-weight:700;display:block;margin:8px 0 5px}.mini-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:9px}.action{border:1px solid var(--line);background:#fff;border-radius:9px;padding:10px 2px;font-size:11px;font-weight:800}.action.nat{border-top:3px solid var(--red)}.action.verz{border-top:3px solid #e8ad2c}.action.pit{border-top:3px solid #81a83b}.action:disabled{opacity:.32;cursor:not-allowed;filter:grayscale(1)}.action.selected{background:#f1f3f7;box-shadow:inset 0 0 0 1px currentColor}.action.nat.selected{color:var(--red);background:var(--redbg)}.action.verz.selected{color:var(--amber);background:var(--amberbg)}.action.pit.selected{color:var(--green);background:var(--greenbg)}.roemline{display:flex;align-items:center;justify-content:space-between;margin:13px 0 7px;font-size:12px;font-weight:800}.roemtotal{font-size:20px;font-weight:850;color:var(--green);font-variant-numeric:tabular-nums}.roemgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}.roembtn{background:#f8fafc;border:1px solid #dce3ed;border-radius:9px;padding:11px 2px;font-weight:800;font-size:13px;color:#26344c}.roembtn:active{background:var(--blue2);border-color:var(--blue)}.roemgrid .wide{grid-column:span 1}.wide2{grid-column:span 2}.settingsrow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}.hint{font-size:11px;color:var(--muted);line-height:1.45;margin-top:8px}.primary{width:100%;padding:15px;border-radius:13px;background:var(--blue);color:#fff;font-weight:800;font-size:15px;box-shadow:0 5px 14px #365cf52b}.secondary{padding:11px 13px;border-radius:11px;background:#f6f7fa;border:1px solid var(--line);font-weight:700;color:var(--ink)}.danger{color:var(--red)}.status{font-size:12px;font-weight:750;margin-top:10px;padding:9px 10px;border-radius:10px;background:#f7f8fb}.status.warn{background:var(--amberbg);color:var(--amber)}.status.good{background:var(--greenbg);color:var(--green)}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:480px;font-size:12px}th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:right;font-variant-numeric:tabular-nums}th:first-child,td:first-child{text-align:left}th{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.7px}.empty{padding:22px;text-align:center;color:var(--muted);font-size:13px}.toolbar{display:flex;gap:8px;flex-wrap:wrap}.toolbar button{flex:1}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.formgrid label{font-size:11px;color:var(--muted);font-weight:700}.formgrid input,.formgrid select{display:block;margin-top:5px;width:100%}.leader-tabs{display:flex;gap:7px;margin-bottom:12px}.leader-tabs button{flex:1}.small{font-size:11px;color:var(--muted)}.winner{background:var(--greenbg);color:var(--green);border-radius:13px;padding:12px;font-weight:800;margin-top:10px}.modalback{position:fixed;inset:0;background:#10182788;display:none;align-items:flex-end;justify-content:center;padding:12px;z-index:10}.modalback.show{display:flex}.modal{width:min(100%,520px);background:white;border-radius:20px;padding:18px;max-height:85vh;overflow:auto}.modalback.result-show{align-items:center;padding:18px}.modal.result-modal{width:min(100%,480px);border-radius:26px;padding:22px;background:linear-gradient(180deg,#fff 0%,#f8faff 100%);box-shadow:0 24px 80px #07152b55}.result-hero{text-align:center;padding:8px 4px 16px}.result-trophy{font-size:58px;line-height:1.2;filter:drop-shadow(0 5px 8px #d6a32d55)}.result-title{font-size:25px;font-weight:900;letter-spacing:-.7px;margin:7px 0 3px}.result-sub{font-size:12px;color:var(--muted)}.playing-cards{display:flex;justify-content:center;gap:8px;margin:14px 0 2px}.playing-card{width:48px;height:64px;border:1px solid #dce2ec;border-radius:9px;background:#fff;box-shadow:0 5px 12px #1c2d4817;display:flex;align-items:center;justify-content:center;font-size:26px;transform:rotate(-8deg)}.playing-card:nth-child(2){transform:translateY(-5px) rotate(2deg);color:#d83c55}.playing-card:nth-child(3){transform:rotate(9deg);color:#d83c55}.winner-result{border:2px solid #e5c66d;background:linear-gradient(135deg,#fff9e7,#fff);border-radius:19px;padding:15px;margin:8px 0 12px}.winner-result .teamname{font-size:15px;font-weight:850}.winner-result .bigscore{font-size:38px;font-weight:950;letter-spacing:-1px;margin:5px 0;font-variant-numeric:tabular-nums;color:#956300}.result-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:10px}.result-stat{background:#ffffffc9;border:1px solid #eee4c9;border-radius:11px;padding:8px 5px;text-align:center}.result-stat b{display:block;font-size:17px;font-variant-numeric:tabular-nums}.result-stat span{display:block;font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;margin-top:3px}.opponent-result{background:#f0f3f8;border:1px solid #e1e6ef;border-radius:15px;padding:12px;margin:10px 0 15px}.opponent-result .bigscore{font-size:25px;font-weight:850;margin:3px 0}.opponent-result .result-stats{margin-top:7px}.opponent-result .result-stat{background:#fff;border-color:#e7ebf1}.result-modal .primary{margin-top:4px}.modal h2{margin:0 0 14px}.modal .field{margin-bottom:10px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#172033;color:white;padding:11px 16px;border-radius:99px;font-size:12px;display:none;z-index:20;box-shadow:var(--shadow)}
@@ -310,10 +310,32 @@
 .history-row.open .history-delete { z-index:2; }
 .history-row:last-child { margin-bottom:0; }
 
+
+.mode-switch { display:flex; gap:7px; margin:0 0 12px; }
+.mode-switch button {
+ flex:1; min-height:40px; padding:9px 12px; border:1px solid var(--line);
+ border-radius:10px; background:#f7f8fb; color:var(--ink);
+ font-size:13px; font-weight:850;
+}
+.mode-switch button.active {
+ background:var(--blue); border-color:var(--blue); color:#fff;
+}
+
+.history-mode-switch { flex-wrap:wrap; }
+.history-mode-switch button { min-width:0; font-size:12px; padding-left:5px; padding-right:5px; }
+.roemline .roemtools { display:flex; align-items:center; gap:6px; }
+.clear-roem { padding:4px 7px; border-radius:7px; border:1px solid var(--line); background:#f7f8fb; color:var(--muted); font-size:10px; font-weight:800; }
+#undoRoundRow { display:none; }
+#undoRoundRow button { width:100%; }
+
+.advanced-stat-block { margin-top:15px; }
+.advanced-stat-block:first-child { margin-top:0; }
+.advanced-stat-title { margin:0 0 8px; font-size:14px; font-weight:900; }
+.stat-number { font-weight:850; font-variant-numeric:tabular-nums; white-space:nowrap; }
 </style></head>
 <body><main class="app">
 <header class="top"><div class="brand">♣ Klaverjas<small>SCORE · HISTORIE · KLASSEMENT</small></div><div class="top-actions"><button class="iconbtn" id="playersBtn">Spelers</button><button class="iconbtn" id="backupBtn" aria-label="Back-up">↧</button></div></header>
-<div id="appVersion">APPVERSIE 2.13 · AUTOMATISCHE UPDATES</div>
+<div id="appVersion">APPVERSIE 2.17 · STATISTIEKEN + UITSLAG DELEN</div>
 <div id="wakeStatus" class="wake-status" role="status" aria-live="polite">Tik in Spelen om het scherm aan te houden</div>
 <nav class="tabs"><button class="tab active" data-tab="play">Spelen</button><button class="tab" data-tab="leader">Klassement</button><button class="tab" data-tab="history">Historie</button><button class="tab" data-tab="settings">Beheer</button></nav>
 <section class="panel active" id="play">
@@ -322,12 +344,12 @@
  <div class="settingsrow"><label class="small">Wie vraagt / speelt troef?<select class="field" id="maker"><option value="wij">Wij</option><option value="zij">Zij</option></select></label><div class="small" style="align-self:end;padding:10px 2px">Vul Wij óf Zij in; de andere score wordt vanzelf berekend. Je mag ook beide invullen.</div></div>
  <div id="teamInputs"></div>
  <div class="hint">Vul normaal de kaartpunten van één team in; de andere score volgt automatisch. Bij NAT, VERZ of PIT vullen de knoppen direct 0 en 162 kaartpunten in. Roem registreer je per team.</div>
- <div id="roundStatus"></div><button class="primary" id="processBtn" style="margin-top:14px">✓ Verwerk ronde</button>
+ <div id="roundStatus"></div><button class="primary" id="processBtn" style="margin-top:14px">✓ Verwerk ronde</button><div class="toolbar" id="undoRoundRow" style="margin-top:8px;display:none"><button class="secondary" id="undoRoundBtn" type="button">↶ Herstel laatste ronde</button></div>
  </div>
  <div class="card"><h2 class="section-title">Scoreverloop per ronde</h2><div id="roundTable" class="tablewrap"></div></div>
 </section>
-<section class="panel" id="leader"><div class="card"><h2 class="section-title">Klassement</h2><div class="leader-tabs"><button class="tab active" id="individualTab">Persoonlijk</button><button class="tab" id="teamTab">Teams</button></div><div id="leaderTable"></div><p class="hint">Rangschikking: eerst meeste gewonnen potjes, daarna hoogste totaal aantal punten. NAT en PIT worden apart bijgehouden.</p></div></section>
-<section class="panel" id="history"><div class="card"><h2 class="section-title">Potjeshistorie</h2><p class="hint" style="display:block;margin:-4px 0 10px">Veeg een partij naar links om deze te verwijderen.</p><div id="historyList"></div></div></section>
+<section class="panel" id="leader"><div class="card"><h2 class="section-title">Klassement</h2><div class="mode-switch" aria-label="Klassement filter"><button id="leaderModeFriends" type="button">Vrienden</button><button id="leaderModeFamily" type="button">Familie</button></div><div class="leader-tabs"><button class="tab active" id="individualTab">Persoonlijk</button><button class="tab" id="teamTab">Teams</button></div><div id="leaderTable"></div><p class="hint">Rangschikking: eerst meeste gewonnen potjes, daarna hoogste totaal aantal punten. NAT en PIT worden apart bijgehouden.</p></div><div class="card"><h2 class="section-title">Extra statistieken</h2><div id="advancedStats"></div><p class="hint">Statistieken zijn gebaseerd op de geselecteerde modus. Gemiddelden zijn punten per speler per afgerond potje. Winpercentage is gewonnen gedeeld door gespeeld.</p></div></section>
+<section class="panel" id="history"><div class="card"><h2 class="section-title">Potjeshistorie</h2><div class="mode-switch history-mode-switch" aria-label="Historie filter"><button id="historyModeFriends" type="button">Vrienden</button><button id="historyModeFamily" type="button">Familie</button><button id="historyModeUnranked" type="button">Zonder klassement</button></div><p class="hint" style="display:block;margin:-4px 0 10px">Veeg een partij naar links om deze te verwijderen.</p><div id="historyList"></div></div></section>
 <section class="panel" id="settings"><div class="card"><h2 class="section-title">Spelers & teams</h2><div class="formgrid" id="playerFields"></div><p class="hint">De eerste twee namen vormen Wij; de andere twee Zij. Je kunt de spelers per nieuw potje opnieuw indelen.</p><button class="primary" id="savePlayers">Spelers opslaan</button></div><div class="card"><h2 class="section-title">Gegevensbeheer</h2><div class="toolbar"><button class="secondary" id="exportBtn">Exporteer back-up</button><button class="secondary" id="importBtn">Importeer back-up</button><input type="file" id="importFile" accept="application/json" hidden></div><p class="hint"><b>Automatische back-up:</b> De app bewaart automatisch maximaal twee herstelkopieën in deze browser: de nieuwste en de vorige versie. Na iedere opgeslagen wijziging worden deze bijgewerkt; er worden dus geen nieuwe downloadbestanden aangemaakt. Wil je een back-up buiten Safari bewaren, gebruik dan <b>Exporteer back-up</b>. Bewaar dat bestand bijvoorbeeld in iCloud Drive. Safari kan oude bestanden in Downloads of iCloud Drive niet zelfstandig verwijderen.</p><button class="secondary danger" id="clearHistory" style="width:100%;margin-top:10px">Wis volledige historie en klassementen</button></div></section>
 </main><div class="modalback" id="modal"><div class="modal" id="modalContent"></div></div><div class="toast" id="toast"></div>
 <script>
@@ -336,7 +358,7 @@ const AUTO_BACKUP_KEY=KEY+'_auto_backup_latest';
 const AUTO_BACKUP_PREVIOUS_KEY=KEY+'_auto_backup_previous';
 const AUTO_BACKUP_INFO_KEY=KEY+'_auto_backup_info';
 const DEFAULT={players:['Gerrie','Sabrina','Quincy','Chloe'],pots:[],current:null};
-let db=load();let roem={wij:[],zij:[]},flags={nat:null,verz:null,pit:null},leaderMode='individual';
+let db=load();let activeMode=db.current?.mode==='familie'?'familie':(db.current?.mode==='zonder'?'zonder':'vrienden');let historyMode='vrienden',leaderboardMode='vrienden';let roem={wij:[],zij:[]},flags={nat:null,verz:null,pit:null},leaderMode='individual';
 function validStore(data){return !!data&&Array.isArray(data.players)&&Array.isArray(data.pots)}
 function load(){
  for(const key of [KEY,AUTO_BACKUP_KEY,AUTO_BACKUP_PREVIOUS_KEY]){
@@ -359,18 +381,25 @@ function save(){
 }
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function fmt(n){return Number(n||0).toLocaleString('nl-NL')}
 function teams(){return {wij:db.current?db.current.teams.wij:db.players.slice(0,2),zij:db.current?db.current.teams.zij:db.players.slice(2,4)}}function nextMaker(){let rs=db.current?.rounds||[];if(!rs.length)return 'wij';let last=rs[rs.length-1].maker||'wij';return last==='wij'?'zij':'wij'}function sums(){let p=db.current?.rounds||[];return {wij:p.reduce((a,r)=>a+r.scoreWij,0),zij:p.reduce((a,r)=>a+r.scoreZij,0)}}
-function render(){document.getElementById('maker').value=nextMaker();renderHead();renderInputs();renderRounds();renderLeader();renderHistory();renderPlayerFields();document.getElementById('roundPill').textContent='Ronde '+((db.current?.rounds.length||0)+1);let turn=document.getElementById('turnPill');if(turn)turn.textContent='Troefbeurt · '+document.getElementById('maker').value.toUpperCase()}
+function render(){
+ document.getElementById('maker').value=nextMaker();
+ renderHead();renderInputs();renderRounds();renderLeader();renderHistory();renderPlayerFields();
+ document.getElementById('roundPill').textContent='Ronde '+((db.current?.rounds.length||0)+1);
+ let turn=document.getElementById('turnPill');
+ if(turn)turn.textContent='Troefbeurt · '+document.getElementById('maker').value.toUpperCase();
+ const undoRow=document.getElementById('undoRoundRow');
+ if(undoRow)undoRow.style.display=(db.current&&!db.current.finished&&(db.current.rounds?.length||0)>0)?'flex':'none';
+}
 function renderHead(){
  let s=sums(),t=teams();
  document.getElementById('scorehead').innerHTML=['wij','zij'].map(k=>`<div class="scorebox"><div class="teamname">${k.toUpperCase()} · ${t[k].map(esc).join(' & ')}</div><div class="score">${fmt(s[k])}</div><div class="progress"><span style="width:${Math.min(100,s[k]/15)}%"></span></div><div class="sub">${fmt(Math.max(0,1500-s[k]))} punten tot 1.500</div></div>`).join('');
  let st=document.getElementById('potStatus');
- if(db.current?.finished){
-  st.innerHTML=`<div class="winner">Potje afgelopen · ${esc(db.current.winner.toUpperCase())} heeft gewonnen</div>`;
- }else if(db.current){
-  st.innerHTML='<div class="toolbar" style="margin-top:10px"><button class="secondary danger" id="cancelCurrentPot">Annuleer potje & start nieuw</button></div>';
+ if(db.current?.finished){st.innerHTML=`<div class="winner">Potje afgelopen · ${esc(db.current.winner.toUpperCase())} heeft gewonnen</div>`;}
+ else if(db.current){
+  st.innerHTML='<div class="small" style="margin:5px 0 7px">Speelmodus · <b>'+modeName(getPotMode(db.current))+'</b></div><div class="toolbar" style="margin-top:10px"><button class="secondary danger" id="cancelCurrentPot">Annuleer potje & start nieuw</button></div>';
   document.getElementById('cancelCurrentPot').onclick=cancelCurrentPot;
  }else{
-  st.innerHTML='<div class="toolbar" style="margin-top:12px"><button class="secondary" id="startPot">＋ Start nieuw potje</button></div>';
+  st.innerHTML='<div class="small" style="margin:5px 0 7px">Standaard voor nieuw potje · <b>Vrienden</b></div><div class="toolbar" style="margin-top:12px"><button class="secondary" id="startPot">＋ Start nieuw potje</button></div>';
   document.getElementById('startPot').onclick=newPot;
  }
 }
@@ -386,7 +415,45 @@ function cancelCurrentPot(){
  render();
  newPot();
 }
-function renderInputs(){let t=teams(),previous={wij:document.getElementById('pointswij')?.value||'',zij:document.getElementById('pointszij')?.value||''};document.getElementById('teamInputs').innerHTML='<div class="teams">'+['wij','zij'].map(k=>{return `<div class="team" data-team="${k}"><h3>${k.toUpperCase()}</h3><div class="members">${t[k].map(esc).join(' & ')}</div><div class="teamtotal" id="roundScore${k}">—</div><label class="field-label">Kaartpunten ${k.toUpperCase()}</label><input class="field cardpoints" data-team="${k}" id="points${k}" type="number" min="0" max="162" placeholder="Vul punten in" value="${esc(previous[k])}"><div class="mini-actions"><button class="action nat" data-flag="nat" data-team="${k}" ${k!==document.getElementById('maker').value?'disabled title="Alleen het team dat troef vraagt kan nat gaan"':''}>NAT</button><button class="action verz" data-flag="verz" data-team="${k}">VERZ</button><button class="action pit" data-flag="pit" data-team="${k}">PIT</button></div><div class="roemline"><span>ROEM ${k.toUpperCase()}</span><span class="roemtotal" id="roemTotal${k}">${roem[k].reduce((a,b)=>a+b,0)}</span></div><div class="roemgrid">${[20,50,100,40,70].map(n=>`<button class="roembtn" data-roem="${n}" data-team="${k}">+${n}</button>`).join('')}</div><div class="sub" id="roemDetail${k}">${roem[k].length?roem[k].join(' + '):'Nog geen roem'}</div></div>`}).join('')+'</div>';document.querySelectorAll('[data-roem]').forEach(b=>b.onclick=()=>{roem[b.dataset.team].push(+b.dataset.roem);renderInputs()});document.querySelectorAll('[data-flag]').forEach(b=>b.onclick=()=>{let f=b.dataset.flag,k=b.dataset.team;if(f==='nat'&&k!==document.getElementById('maker').value){toast('Alleen het team dat troef vraagt kan nat gaan.');return}let already=flags[f]===k;flags={nat:null,verz:null,pit:null};if(!already){flags[f]=k;let cardWij=f==='pit'?(k==='wij'?162:0):(k==='wij'?0:162);let cardZij=162-cardWij;document.getElementById('pointswij').value=String(cardWij);document.getElementById('pointszij').value=String(cardZij);}else{document.getElementById('pointswij').value='';document.getElementById('pointszij').value='';}renderInputs()});document.querySelectorAll('.cardpoints').forEach(i=>i.oninput=updatePreview);document.getElementById('maker').onchange=()=>{let makerNow=document.getElementById('maker').value;if(flags.nat&&flags.nat!==makerNow)flags.nat=null;let turn=document.getElementById('turnPill');if(turn)turn.textContent='Troefbeurt · '+makerNow.toUpperCase();renderInputs()};updatePreview()}
+function renderInputs(){
+ let t=teams(),previous={wij:document.getElementById('pointswij')?.value||'',zij:document.getElementById('pointszij')?.value||''};
+ document.getElementById('teamInputs').innerHTML='<div class="teams">'+['wij','zij'].map(k=>{
+  return `<div class="team" data-team="${k}">
+   <h3>${k.toUpperCase()}</h3><div class="members">${t[k].map(esc).join(' & ')}</div>
+   <div class="teamtotal" id="roundScore${k}">—</div>
+   <label class="field-label">Kaartpunten ${k.toUpperCase()}</label>
+   <input class="field cardpoints" data-team="${k}" id="points${k}" type="number" min="0" max="162" placeholder="Vul punten in" value="${esc(previous[k])}">
+   <div class="mini-actions">
+    <button class="action nat" data-flag="nat" data-team="${k}" ${k!==document.getElementById('maker').value?'disabled title="Alleen het team dat troef vraagt kan nat gaan"':''}>NAT</button>
+    <button class="action verz" data-flag="verz" data-team="${k}">VERZ</button>
+    <button class="action pit" data-flag="pit" data-team="${k}">PIT</button>
+   </div>
+   <div class="roemline"><span>ROEM ${k.toUpperCase()}</span><span class="roemtools"><span class="roemtotal" id="roemTotal${k}">${roem[k].reduce((a,b)=>a+b,0)}</span><button type="button" class="clear-roem" data-clear-roem="${k}">Wis</button></span></div>
+   <div class="roemgrid">${[20,50,100,40,70].map(n=>`<button class="roembtn" data-roem="${n}" data-team="${k}">+${n}</button>`).join('')}</div>
+   <div class="sub" id="roemDetail${k}">${roem[k].length?roem[k].join(' + '):'Nog geen roem'}</div>
+  </div>`;
+ }).join('')+'</div>';
+ document.querySelectorAll('[data-roem]').forEach(b=>b.onclick=()=>{roem[b.dataset.team].push(+b.dataset.roem);renderInputs()});
+ document.querySelectorAll('[data-clear-roem]').forEach(b=>b.onclick=()=>{roem[b.dataset.clearRoem]=[];renderInputs()});
+ document.querySelectorAll('[data-flag]').forEach(b=>b.onclick=()=>{
+  let f=b.dataset.flag,k=b.dataset.team;
+  if(f==='nat'&&k!==document.getElementById('maker').value){toast('Alleen het team dat troef vraagt kan nat gaan.');return}
+  let already=flags[f]===k;flags={nat:null,verz:null,pit:null};
+  if(!already){
+   flags[f]=k;let cardWij=f==='pit'?(k==='wij'?162:0):(k==='wij'?0:162);
+   let cardZij=162-cardWij;document.getElementById('pointswij').value=String(cardWij);document.getElementById('pointszij').value=String(cardZij);
+  }else{document.getElementById('pointswij').value='';document.getElementById('pointszij').value=''}
+  renderInputs();
+ });
+ document.querySelectorAll('.cardpoints').forEach(i=>i.oninput=updatePreview);
+ document.getElementById('maker').onchange=()=>{
+  let makerNow=document.getElementById('maker').value;
+  if(flags.nat&&flags.nat!==makerNow)flags.nat=null;
+  let turn=document.getElementById('turnPill');if(turn)turn.textContent='Troefbeurt · '+makerNow.toUpperCase();
+  renderInputs();
+ };
+ updatePreview();
+}
 function calc(){
  let card={wij:0,zij:0},rawWij=document.getElementById('pointswij').value.trim(),rawZij=document.getElementById('pointszij').value.trim();
  if(rawWij===''&&rawZij==='')return null;
@@ -424,7 +491,122 @@ function potSummary(pot){
  });
  return out;
 }
+function buildPotShareText(pot){
+ const sum=potSummary(pot);
+ const teamNames=k=>pot.teams[k].join(' & ');
+ const winner=pot.winner==='Gelijkspel'?'Gelijkspel':teamNames(pot.winner);
+ return '♣ KLAVERJAS-UITSLAG\n'+new Date(pot.endDate||pot.date).toLocaleDateString('nl-NL')+'\n\n'+
+  'WIJ · '+teamNames('wij')+': '+fmt(sum.wij.points)+' punten\n'+
+  'Roem: '+fmt(sum.wij.roem)+' · NAT: '+sum.wij.nat+' · PIT: '+sum.wij.pit+'\n\n'+
+  'ZIJ · '+teamNames('zij')+': '+fmt(sum.zij.points)+' punten\n'+
+  'Roem: '+fmt(sum.zij.roem)+' · NAT: '+sum.zij.nat+' · PIT: '+sum.zij.pit+'\n\n'+
+  'WINNAAR: '+winner+'\nGesp. rondes: '+pot.rounds.length;
+}
+function shareCanvasRoundRect(ctx,x,y,w,h,r){
+ const radius=Math.min(r,w/2,h/2);
+ ctx.beginPath();
+ ctx.moveTo(x+radius,y);
+ ctx.lineTo(x+w-radius,y);
+ ctx.quadraticCurveTo(x+w,y,x+w,y+radius);
+ ctx.lineTo(x+w,y+h-radius);
+ ctx.quadraticCurveTo(x+w,y+h,x+w-radius,y+h);
+ ctx.lineTo(x+radius,y+h);
+ ctx.quadraticCurveTo(x,y+h,x,y+h-radius);
+ ctx.lineTo(x,y+radius);
+ ctx.quadraticCurveTo(x,y,x+radius,y);
+ ctx.closePath();
+}
+function drawShareWrapped(ctx,text,x,y,maxWidth,lineHeight,maxLines){
+ const words=String(text).split(/\s+/);
+ let line='',lines=[];
+ words.forEach(word=>{
+  const test=line?line+' '+word:word;
+  if(ctx.measureText(test).width>maxWidth&&line){lines.push(line);line=word;}
+  else line=test;
+ });
+ if(line)lines.push(line);
+ if(maxLines&&lines.length>maxLines){
+  lines=lines.slice(0,maxLines);
+  let last=lines[maxLines-1];
+  while(ctx.measureText(last+'…').width>maxWidth&&last.length>1)last=last.slice(0,-1);
+  lines[maxLines-1]=last+'…';
+ }
+ lines.forEach((value,index)=>ctx.fillText(value,x,y+index*lineHeight));
+ return y+lines.length*lineHeight;
+}
+function createPotShareImage(pot){
+ const sum=potSummary(pot);
+ const canvas=document.createElement('canvas');
+ canvas.width=1080;canvas.height=1350;
+ const ctx=canvas.getContext('2d');
+ if(!ctx)return null;
+ const gradient=ctx.createLinearGradient(0,0,1080,1350);
+ gradient.addColorStop(0,'#14233b');gradient.addColorStop(1,'#263f62');
+ ctx.fillStyle=gradient;ctx.fillRect(0,0,1080,1350);
+ ctx.fillStyle='#dfbd79';ctx.font='900 46px Arial';ctx.fillText('♣ KLAVERJAS',78,112);
+ ctx.fillStyle='#d8e0ec';ctx.font='600 27px Arial';
+ ctx.fillText('UITSLAG  ·  '+new Date(pot.endDate||pot.date).toLocaleDateString('nl-NL'),80,164);
+ shareCanvasRoundRect(ctx,60,210,960,1045,34);ctx.fillStyle='#f5f7fb';ctx.fill();
+ const left=pot.teams.wij.join(' & '),right=pot.teams.zij.join(' & ');
+ const totalWij=fmt(sum.wij.points),totalZij=fmt(sum.zij.points);
+ ctx.textAlign='center';ctx.fillStyle='#65738a';ctx.font='800 25px Arial';
+ ctx.fillText('EINDSTAND',540,278);
+ ctx.fillStyle='#17263d';ctx.font='900 94px Arial';
+ ctx.fillText(totalWij+'  —  '+totalZij,540,395);
+ ctx.fillStyle='#65738a';ctx.font='700 22px Arial';ctx.fillText('WIJ',300,443);ctx.fillText('ZIJ',780,443);
+ ctx.textAlign='left';
+ shareCanvasRoundRect(ctx,105,500,870,215,22);ctx.fillStyle='#e9eef5';ctx.fill();
+ ctx.fillStyle='#182940';ctx.font='900 36px Arial';
+ let nameTop=drawShareWrapped(ctx,left,145,548,720,44,2);
+ let nameBottom=drawShareWrapped(ctx,right,600,548,720,44,2);
+ ctx.fillStyle='#596981';ctx.font='600 24px Arial';
+ ctx.fillText('Punten   '+fmt(sum.wij.points),145,645);
+ ctx.fillText('Roem   '+fmt(sum.wij.roem)+'     NAT   '+sum.wij.nat+'     PIT   '+sum.wij.pit,145,685);
+ ctx.fillText('Punten   '+fmt(sum.zij.points),600,645);
+ ctx.fillText('Roem   '+fmt(sum.zij.roem)+'     NAT   '+sum.zij.nat+'     PIT   '+sum.zij.pit,600,685);
+ const winner=pot.winner==='Gelijkspel'?'GELIJKSPEL':pot.teams[pot.winner].join(' & ').toUpperCase();
+ shareCanvasRoundRect(ctx,105,780,870,190,24);ctx.fillStyle='#e9ddbd';ctx.fill();
+ ctx.textAlign='center';ctx.fillStyle='#725622';ctx.font='800 25px Arial';ctx.fillText(pot.winner==='Gelijkspel'?'MOOI GESPEELD':'WINNAAR',540,840);
+ ctx.fillStyle='#3a2e1d';ctx.font='900 43px Arial';drawShareWrapped(ctx,winner,540,902,770,52,2);
+ ctx.fillStyle='#6b7788';ctx.font='600 23px Arial';ctx.fillText(pot.rounds.length+' rondes gespeeld',540,1060);
+ ctx.fillStyle='#203652';ctx.font='800 24px Arial';ctx.fillText('Veel speelplezier!  ♣  ♥  ♦  ♠',540,1150);
+ ctx.textAlign='left';
+ try{
+  const data=canvas.toDataURL('image/png');
+  const parts=data.split(',');
+  const binary=atob(parts[1]);
+  const bytes=new Uint8Array(binary.length);
+  for(let i=0;i<binary.length;i++)bytes[i]=binary.charCodeAt(i);
+  return new File([bytes],'klaverjas-uitslag-'+new Date(pot.endDate||pot.date).toISOString().slice(0,10)+'.png',{type:'image/png'});
+ }catch(error){return null;}
+}
+function sharePotResult(pot){
+ const shareText=buildPotShareText(pot);
+ const imageFile=createPotShareImage(pot);
+ if(imageFile&&navigator.share&&navigator.canShare){
+  try{
+   if(navigator.canShare({files:[imageFile]})){
+    navigator.share({files:[imageFile],title:'Klaverjas uitslag',text:shareText})
+     .then(()=>toast('Uitslag gedeeld.'))
+     .catch(error=>{if(error?.name!=='AbortError')toast('Delen is niet gelukt. Probeer het opnieuw.')});
+    return;
+   }
+  }catch(error){}
+ }
+ if(imageFile){
+  const url=URL.createObjectURL(imageFile);
+  const a=document.createElement('a');a.href=url;a.download=imageFile.name;
+  document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),30000);
+ }
+ const whatsapp='https://wa.me/?text='+encodeURIComponent(shareText);
+ const w=window.open(whatsapp,'_blank');
+ if(!w)toast('Uitslagafbeelding gedownload. Deel deze samen met het WhatsApp-bericht.');
+ else toast('Afbeelding gedownload. Voeg deze toe in WhatsApp.');
+}
+
 function showPotResult(pot){
+
  const sum=potSummary(pot),winner=pot.winner,loser=winner==='wij'?'zij':'wij',teams=pot.teams;
  const teamName=k=>teams[k].map(esc).join(' & ');
  const stat=(label,value)=>`<div class="result-stat"><b>${fmt(value)}</b><span>${label}</span></div>`;
@@ -434,7 +616,9 @@ function showPotResult(pot){
  const second=winner==='Gelijkspel'?`<div class="opponent-result"><div class="small" style="font-weight:800">Team Zij · ${teamName('zij')}</div><div class="bigscore">${fmt(sum.zij.points)} punten</div><div class="result-stats">${stat('Punten',sum.zij.points)}${stat('Roem',sum.zij.roem)}${stat('Pit',sum.zij.pit)}${stat('Nat',sum.zij.nat)}</div></div>`:otherBlock;
  document.getElementById('modalContent').classList.add('result-modal');
  document.getElementById('modal').classList.add('result-show','show');
- document.getElementById('modalContent').innerHTML=`${winnerHtml}${winBlock}${second}<button class="primary" id="closeResult">Verder</button>`;
+ document.getElementById('modalContent').innerHTML=`${winnerHtml}${winBlock}${second}<div class="toolbar" style="margin-top:8px"><button class="secondary" id="restoreFinishedRound">↶ Laatste ronde corrigeren</button><button class="secondary" id="shareResultButton">Deel uitslag</button><button class="primary" id="closeResult">Verder</button></div>`;
+ document.getElementById('restoreFinishedRound').onclick=()=>reopenFinishedPotForCorrection(pot.id);
+ document.getElementById('shareResultButton').onclick=()=>sharePotResult(pot);
  document.getElementById('closeResult').onclick=()=>{document.getElementById('modal').classList.remove('show','result-show');document.getElementById('modalContent').classList.remove('result-modal');showBackupPrompt()};
 }
 function showBackupPrompt(){
@@ -446,13 +630,146 @@ function showBackupPrompt(){
  document.getElementById('createBackupNow').onclick=()=>{document.getElementById('modal').classList.remove('show');exportBackup();toast('Back-upbestand aangemaakt. Controleer iCloud Drive / Downloads.')};
 }
 
-function processRound(){if(db.current?.finished){toast('Dit potje is al afgelopen. Start een nieuw potje.');return}let c=calc();if(!c){toast('Vul de benodigde kaartpunten in.');return}if(c.invalid){toast(c.reason);return}ensurePot();let r={nr:db.current.rounds.length+1,cardWij:c.card.wij,cardZij:c.card.zij,roemWij:c.r.wij,roemZij:c.r.zij,scoreWij:c.score.wij,scoreZij:c.score.zij,nat:c.nat,verz:c.verz,pit:c.pit,reason:c.reason,maker:c.maker,date:new Date().toISOString()};db.current.rounds.push(r);let s=sums();if(s.wij>=1500||s.zij>=1500){db.current.finished=true;db.current.winner=s.wij===s.zij?'Gelijkspel':s.wij>s.zij?'wij':'zij';db.current.endDate=new Date().toISOString();let completedPot=db.current;db.pots.push(completedPot);db.current=null;save();render();showPotResult(completedPot);}else{save();roem={wij:[],zij:[]};flags={nat:null,verz:null,pit:null};document.getElementById('pointswij').value='';document.getElementById('pointszij').value='';render();toast('Ronde opgeslagen.')} }
-function newPot(){if(db.current&&db.current.rounds.length){if(!confirm('Het huidige potje is nog niet afgelopen. Sluit dit potje af en start een nieuw potje?'))return;db.pots.push({...db.current,finished:true,winner:'afgebroken',endDate:new Date().toISOString()})}let opts=db.players.map((n,i)=>`<option value="${i}">${esc(n)}</option>`).join('');document.getElementById('modalContent').innerHTML=`<h2>Nieuw potje</h2><p class="small">Verdeel de vier spelers over twee teams. Iedere speler kan maar één keer gekozen worden.</p><div class="formgrid"><label>Wij · speler 1<select class="field teamselect" id="selw1">${opts}</select></label><label>Wij · speler 2<select class="field teamselect" id="selw2">${opts}</select></label><label>Zij · speler 1<select class="field teamselect" id="selz1">${opts}</select></label><label>Zij · speler 2<select class="field teamselect" id="selz2">${opts}</select></label></div><div class="toolbar" style="margin-top:14px"><button class="secondary" id="cancelNew">Annuleren</button><button class="primary" id="confirmNew">Start potje</button></div>`;['selw1','selw2','selz1','selz2'].forEach((id,i)=>document.getElementById(id).value=String(i));document.getElementById('modal').classList.add('show');document.getElementById('cancelNew').onclick=()=>document.getElementById('modal').classList.remove('show');document.getElementById('confirmNew').onclick=()=>{let ids=['selw1','selw2','selz1','selz2'].map(id=>document.getElementById(id).value);if(new Set(ids).size!==4){toast('Selecteer iedere speler één keer.');return}db.current={id:Date.now(),date:new Date().toISOString(),teams:{wij:[db.players[+ids[0]],db.players[+ids[1]]],zij:[db.players[+ids[2]],db.players[+ids[3]]]},rounds:[],finished:false,winner:null};document.getElementById('modal').classList.remove('show');roem={wij:[],zij:[]};flags={nat:null,verz:null,pit:null};save();render();toast('Nieuw potje gestart')}}
-function stats(){let people={},pairs={};db.pots.forEach(p=>{let s=p.rounds.reduce((a,r)=>({wij:a.wij+r.scoreWij,zij:a.zij+r.scoreZij}),{wij:0,zij:0});['wij','zij'].forEach(k=>{let arr=p.teams[k],key=arr.slice().sort().join(' & '),win=p.winner===k,lose=p.winner!=='afgebroken'&&p.winner!=='Gelijkspel'&&!win;let pitCount=p.rounds.filter(r=>r.pit===k).length,natCount=p.rounds.filter(r=>r.nat===k).length;let obj=pairs[key]||(pairs[key]={name:key,played:0,wins:0,losses:0,points:0,nat:0,pit:0});obj.played++;obj.wins+=win?1:0;obj.losses+=lose?1:0;obj.points+=s[k];obj.nat+=natCount;obj.pit+=pitCount;arr.forEach(name=>{let x=people[name]||(people[name]={name,played:0,wins:0,losses:0,points:0,nat:0,pit:0});x.played++;x.wins+=win?1:0;x.losses+=lose?1:0;x.points+=s[k];x.nat+=natCount;x.pit+=pitCount})})});return {people:Object.values(people),pairs:Object.values(pairs)}}
-function renderLeader(){let st=stats(),rows=(leaderMode==='individual'?st.people:st.pairs).sort((a,b)=>b.wins-a.wins||b.points-a.points);document.getElementById('individualTab').classList.toggle('active',leaderMode==='individual');document.getElementById('teamTab').classList.toggle('active',leaderMode==='team');document.getElementById('leaderTable').innerHTML=rows.length?`<div class="tablewrap"><table><thead><tr><th># · ${leaderMode==='individual'?'Speler':'Team'}</th><th>Gespeeld</th><th>W</th><th>V</th><th>Punten</th><th>NAT</th><th>PIT</th></tr></thead><tbody>${rows.map((r,i)=>`<tr><td>${i+1}. ${esc(r.name)}</td><td>${r.played}</td><td>${r.wins}</td><td>${r.losses}</td><td>${fmt(r.points)}</td><td>${r.nat}</td><td>${r.pit}</td></tr>`).join('')}</tbody></table></div>`:'<div class="empty">Het klassement wordt opgebouwd zodra potjes zijn afgerond.</div>'}
-function renderHistory(){
- let pots=db.pots.map((pot,index)=>({pot,index})).reverse();
- const list=document.getElementById('historyList');
+function restoreLastRound(skipConfirm=false){
+ if(!db.current||!db.current.rounds?.length){toast('Er is geen ronde om te herstellen.');return}
+ const last=db.current.rounds[db.current.rounds.length-1];
+ if(!skipConfirm&&!confirm('De laatst verwerkte ronde wordt teruggezet naar de invoervelden. Je kunt kaartpunten, roem en NAT/VERZ/PIT aanpassen en de ronde opnieuw verwerken. Doorgaan?'))return;
+ db.current.rounds.pop();
+ db.current.finished=false;db.current.winner=null;delete db.current.endDate;
+ activeMode=getPotMode(db.current);
+ const entriesWij=Array.isArray(last.roemEntriesWij)?last.roemEntriesWij:(last.roemWij?[last.roemWij]:[]);
+ const entriesZij=Array.isArray(last.roemEntriesZij)?last.roemEntriesZij:(last.roemZij?[last.roemZij]:[]);
+ roem={wij:[...entriesWij],zij:[...entriesZij]};
+ if(last.manualFlags)flags={nat:last.manualFlags.nat||null,verz:last.manualFlags.verz||null,pit:last.manualFlags.pit||null};
+ else flags={nat:last.reason==='nat'?last.nat:null,verz:last.reason==='verz'?last.verz:null,pit:last.reason==='pit'?last.pit:null};
+ save();render();
+ document.getElementById('maker').value=last.maker||nextMaker();
+ const turn=document.getElementById('turnPill');if(turn)turn.textContent='Troefbeurt · '+document.getElementById('maker').value.toUpperCase();
+ renderInputs();
+ document.getElementById('pointswij').value=String(last.cardWij??'');
+ document.getElementById('pointszij').value=String(last.cardZij??'');
+ updatePreview();
+ toast('Laatste ronde hersteld. Pas de invoer aan en verwerk opnieuw.');
+}
+function reopenFinishedPotForCorrection(potId){
+ const index=db.pots.findIndex(p=>p.id===potId);
+ if(index<0)return;
+ const pot=db.pots[index];
+ if(!pot.rounds?.length)return;
+ if(!confirm('Dit afgeronde potje wordt tijdelijk teruggezet naar Spelen. De laatste ronde kun je aanpassen en opnieuw verwerken. Doorgaan?'))return;
+ db.pots.splice(index,1);pot.finished=false;pot.winner=null;delete pot.endDate;
+ db.current=pot;activeMode=getPotMode(pot);
+ document.getElementById('modal').classList.remove('show','result-show');
+ document.getElementById('modalContent').classList.remove('result-modal');
+ restoreLastRound(true);
+}
+function processRound(){if(db.current?.finished){toast('Dit potje is al afgelopen. Start een nieuw potje.');return}let c=calc();if(!c){toast('Vul de benodigde kaartpunten in.');return}if(c.invalid){toast(c.reason);return}ensurePot();let r={nr:db.current.rounds.length+1,cardWij:c.card.wij,cardZij:c.card.zij,roemWij:c.r.wij,roemZij:c.r.zij,roemEntriesWij:[...roem.wij],roemEntriesZij:[...roem.zij],manualFlags:{...flags},scoreWij:c.score.wij,scoreZij:c.score.zij,nat:c.nat,verz:c.verz,pit:c.pit,reason:c.reason,maker:c.maker,date:new Date().toISOString()};db.current.rounds.push(r);let s=sums();if(s.wij>=1500||s.zij>=1500){db.current.finished=true;db.current.winner=s.wij===s.zij?'Gelijkspel':s.wij>s.zij?'wij':'zij';db.current.endDate=new Date().toISOString();let completedPot=db.current;db.pots.push(completedPot);db.current=null;save();render();showPotResult(completedPot);}else{save();roem={wij:[],zij:[]};flags={nat:null,verz:null,pit:null};document.getElementById('pointswij').value='';document.getElementById('pointszij').value='';render();toast('Ronde opgeslagen.')} }
+function newPot(){
+ if(db.current&&db.current.rounds.length){
+  if(!confirm('Het huidige potje is nog niet afgelopen. Sluit dit potje af en start een nieuw potje?'))return;
+  db.pots.push({...db.current,finished:true,winner:'afgebroken',endDate:new Date().toISOString()});
+ }
+ let opts=db.players.map((n,i)=>'<option value="'+i+'">'+esc(n)+'</option>').join('');
+ document.getElementById('modalContent').innerHTML=
+  '<h2>Nieuw potje</h2>'+
+  '<p class="small">Verdeel de vier spelers over twee teams. Iedere speler kan maar één keer gekozen worden.</p>'+
+  '<label style="display:block;margin:12px 0;font-size:12px;font-weight:800;color:var(--muted)">Waar speel je dit potje?'+
+  '<select class="field" id="potMode" style="display:block;margin-top:5px;width:100%">'+
+  '<option value="vrienden" selected>Vrienden · telt mee in vriendenklassement</option>'+
+  '<option value="familie">Familie · apart familieklassement</option>'+
+  '<option value="zonder">Zonder klassement · alleen bewaren in historie</option>'+
+  '</select></label>'+
+  '<div class="formgrid">'+
+  '<label>Wij · speler 1<select class="field teamselect" id="selw1">'+opts+'</select></label>'+
+  '<label>Wij · speler 2<select class="field teamselect" id="selw2">'+opts+'</select></label>'+
+  '<label>Zij · speler 1<select class="field teamselect" id="selz1">'+opts+'</select></label>'+
+  '<label>Zij · speler 2<select class="field teamselect" id="selz2">'+opts+'</select></label>'+
+  '</div>'+
+  '<div class="toolbar" style="margin-top:14px"><button class="secondary" id="cancelNew">Annuleren</button><button class="primary" id="confirmNew">Start potje</button></div>';
+ ['selw1','selw2','selz1','selz2'].forEach((id,i)=>document.getElementById(id).value=String(i));
+ document.getElementById('modal').classList.add('show');
+ document.getElementById('cancelNew').onclick=()=>document.getElementById('modal').classList.remove('show');
+ document.getElementById('confirmNew').onclick=()=>{
+  let ids=['selw1','selw2','selz1','selz2'].map(id=>document.getElementById(id).value);
+  if(new Set(ids).size!==4){toast('Selecteer iedere speler één keer.');return}
+  const selectedMode=['vrienden','familie','zonder'].includes(document.getElementById('potMode').value)?document.getElementById('potMode').value:'vrienden';
+  activeMode=selectedMode;
+  historyMode=selectedMode;
+  if(selectedMode!=='zonder')leaderboardMode=selectedMode;
+  db.current={id:Date.now(),date:new Date().toISOString(),mode:selectedMode,teams:{wij:[db.players[+ids[0]],db.players[+ids[1]]],zij:[db.players[+ids[2]],db.players[+ids[3]]]},rounds:[],finished:false,winner:null};
+  document.getElementById('modal').classList.remove('show');
+  roem={wij:[],zij:[]};flags={nat:null,verz:null,pit:null};
+  save();render();toast('Nieuw '+modeName(selectedMode).toLowerCase()+' potje gestart');
+ };
+}
+function getPotMode(pot){
+ if(pot?.mode==='zonder')return 'zonder';
+ if(pot?.mode==='familie')return 'familie';
+ return 'vrienden';
+}
+function modeName(mode){return mode==='familie'?'Familie':mode==='zonder'?'Zonder klassement':'Vrienden'}
+function setHistoryMode(mode){
+ historyMode=['vrienden','familie','zonder'].includes(mode)?mode:'vrienden';
+ renderHistory();
+}
+function setLeaderboardMode(mode){
+ leaderboardMode=mode==='familie'?'familie':'vrienden';
+ renderLeader();
+}
+function renderModeSwitches(){
+ const pairs=[['leaderModeFriends',leaderboardMode==='vrienden'],['historyModeFriends',historyMode==='vrienden'],['leaderModeFamily',leaderboardMode==='familie'],['historyModeFamily',historyMode==='familie'],['historyModeUnranked',historyMode==='zonder']];
+ pairs.forEach(([id,active])=>{const button=document.getElementById(id);if(button)button.classList.toggle('active',active)});
+}
+function stats(){
+ let people={},pairs={};
+ db.pots.filter(p=>getPotMode(p)===leaderboardMode).forEach(p=>{
+  let s=p.rounds.reduce((a,r)=>({wij:a.wij+r.scoreWij,zij:a.zij+r.scoreZij}),{wij:0,zij:0});
+  ['wij','zij'].forEach(k=>{
+   let arr=p.teams[k],key=arr.slice().sort().join(' & '),win=p.winner===k,lose=p.winner!=='afgebroken'&&p.winner!=='Gelijkspel'&&!win;
+   let pitCount=p.rounds.filter(r=>r.pit===k).length,natCount=p.rounds.filter(r=>r.nat===k).length;
+   let obj=pairs[key]||(pairs[key]={name:key,played:0,wins:0,losses:0,points:0,nat:0,pit:0});
+   obj.played++;obj.wins+=win?1:0;obj.losses+=lose?1:0;obj.points+=s[k];obj.nat+=natCount;obj.pit+=pitCount;
+   arr.forEach(name=>{
+    let x=people[name]||(people[name]={name,played:0,wins:0,losses:0,points:0,nat:0,pit:0});
+    x.played++;x.wins+=win?1:0;x.losses+=lose?1:0;x.points+=s[k];x.nat+=natCount;x.pit+=pitCount;
+   });
+  });
+ });
+ return {people:Object.values(people),pairs:Object.values(pairs)};
+}
+function renderLeader(){
+ let st=stats(),rows=(leaderMode==='individual'?st.people:st.pairs).sort((a,b)=>b.wins-a.wins||b.points-a.points);
+ renderModeSwitches();
+ document.getElementById('individualTab').classList.toggle('active',leaderMode==='individual');
+ document.getElementById('teamTab').classList.toggle('active',leaderMode==='team');
+ document.getElementById('leaderTable').innerHTML=rows.length?
+  '<div class="tablewrap"><table><thead><tr><th># · '+(leaderMode==='individual'?'Speler':'Team')+'</th><th>Gespeeld</th><th>W</th><th>V</th><th>Punten</th><th>NAT</th><th>PIT</th></tr></thead><tbody>'+
+  rows.map((r,i)=>'<tr><td>'+(i+1)+'. '+esc(r.name)+'</td><td>'+r.played+'</td><td>'+r.wins+'</td><td>'+r.losses+'</td><td>'+fmt(r.points)+'</td><td>'+r.nat+'</td><td>'+r.pit+'</td></tr>').join('')+
+  '</tbody></table></div>':'<div class="empty">Nog geen afgeronde potjes in het '+modeName(leaderboardMode).toLowerCase()+'klassement.</div>';
+
+ const detailed=document.getElementById('advancedStats');
+ const players=st.people.slice();
+ const pairs=st.pairs.slice();
+ const average=players.filter(p=>p.played>0).sort((a,b)=>(b.points/b.played)-(a.points/a.played));
+ const natLeaders=players.sort((a,b)=>b.nat-a.nat||b.played-a.played);
+ const pairLeaders=pairs.filter(p=>p.played>0).sort((a,b)=>(b.wins/b.played)-(a.wins/a.played)||b.wins-a.wins||b.played-a.played);
+ const table=function(headers,rows){
+  if(!rows.length)return '<div class="empty">Nog geen gegevens beschikbaar.</div>';
+  return '<div class="tablewrap"><table><thead><tr>'+headers.map(h=>'<th>'+h+'</th>').join('')+'</tr></thead><tbody>'+rows.join('')+'</tbody></table></div>';
+ };
+ const avgRows=average.slice(0,5).map(p=>'<tr><td>'+esc(p.name)+'</td><td class="stat-number">'+fmt(Math.round(p.points/p.played))+'</td><td>'+p.played+'</td></tr>');
+ const natRows=natLeaders.filter(p=>p.nat>0).slice(0,5).map(p=>'<tr><td>'+esc(p.name)+'</td><td class="stat-number">'+p.nat+'</td><td>'+p.played+'</td></tr>');
+ const pairRows=pairLeaders.slice(0,5).map(p=>'<tr><td>'+esc(p.name)+'</td><td>'+p.wins+'/'+p.played+'</td><td class="stat-number">'+Math.round(100*p.wins/p.played)+'%</td></tr>');
+ detailed.innerHTML=
+  '<div class="advanced-stat-block"><h3 class="advanced-stat-title">Meeste punten per potje</h3>'+
+  table(['Speler','Gem. punten','Potjes'],avgRows)+'</div>'+
+  '<div class="advanced-stat-block"><h3 class="advanced-stat-title">Meeste NAT</h3>'+
+  table(['Speler','NAT','Potjes'],natRows)+'</div>'+
+  '<div class="advanced-stat-block"><h3 class="advanced-stat-title">Succesvolste teamcombinaties</h3>'+
+  table(['Team','Gewonnen / gespeeld','Winpercentage'],pairRows)+'</div>';
+}function renderHistory(){
+ let pots=db.pots.map((pot,index)=>({pot,index})).filter(item=>getPotMode(item.pot)===historyMode).reverse();
+ const list=document.getElementById('historyList');renderModeSwitches();
  list.innerHTML=pots.length?pots.map(({pot:p,index})=>{
   let a=p.teams.wij.join(' & '),b=p.teams.zij.join(' & ');
   let s=p.rounds.reduce((x,r)=>({wij:x.wij+r.scoreWij,zij:x.zij+r.scoreZij}),{wij:0,zij:0});
@@ -462,18 +779,12 @@ function renderHistory(){
     <div style="display:flex;justify-content:space-between;gap:8px"><b>${new Date(p.date).toLocaleDateString('nl-NL')}</b><span class="pill">${p.rounds.length} rondes</span></div>
     <div style="font-size:13px;margin-top:8px">${esc(a)} <b>${fmt(s.wij)}</b><br>${esc(b)} <b>${fmt(s.zij)}</b></div>
     <div class="small" style="margin-top:5px">Winnaar: ${esc(p.winner||'Onbekend')}</div>
-   </div>
-  </div>`;
- }).join(''):'<div class="empty">Nog geen afgeronde potjes.</div>';
-
- list.querySelectorAll('.history-delete').forEach(button=>{
-  button.addEventListener('click',()=>{
-   const row=button.closest('.history-row');
-   if(row)deleteHistoryPot(Number(row.dataset.historyIndex));
-  });
- });
+   </div></div>`;
+ }).join(''):'<div class="empty">Nog geen potjes in de '+modeName(historyMode).toLowerCase()+'historie.</div>';
+ list.querySelectorAll('.history-delete').forEach(button=>button.addEventListener('click',()=>{
+  const row=button.closest('.history-row');if(row)deleteHistoryPot(Number(row.dataset.historyIndex));
+ }));
 }
-
 function deleteHistoryPot(index){
  if(!Number.isInteger(index)||index<0||index>=db.pots.length)return;
  const pot=db.pots[index];
@@ -579,7 +890,7 @@ function tab(name){
   requestScreenWakeLock();
  }else releaseScreenWakeLock();
 }
-document.querySelectorAll('.tab[data-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.tab));document.getElementById('individualTab').onclick=()=>{leaderMode='individual';renderLeader()};document.getElementById('teamTab').onclick=()=>{leaderMode='team';renderLeader()};document.getElementById('processBtn').onclick=processRound;document.getElementById('savePlayers').onclick=()=>{db.players=[...document.querySelectorAll('.pname')].map(x=>x.value.trim()||'Speler');save();render();toast('Spelers opgeslagen')};document.getElementById('playersBtn').onclick=()=>tab('settings');
+document.querySelectorAll('.tab[data-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.tab));document.getElementById('individualTab').onclick=()=>{leaderMode='individual';renderLeader()};document.getElementById('teamTab').onclick=()=>{leaderMode='team';renderLeader()};document.getElementById('leaderModeFriends').onclick=()=>setLeaderboardMode('vrienden');document.getElementById('leaderModeFamily').onclick=()=>setLeaderboardMode('familie');document.getElementById('historyModeFriends').onclick=()=>setHistoryMode('vrienden');document.getElementById('historyModeFamily').onclick=()=>setHistoryMode('familie');document.getElementById('historyModeUnranked').onclick=()=>setHistoryMode('zonder');document.getElementById('processBtn').onclick=processRound;document.getElementById('undoRoundBtn').onclick=()=>restoreLastRound(false);document.getElementById('savePlayers').onclick=()=>{db.players=[...document.querySelectorAll('.pname')].map(x=>x.value.trim()||'Speler');save();render();toast('Spelers opgeslagen')};document.getElementById('playersBtn').onclick=()=>tab('settings');
 function exportBackup(){let blob=new Blob([JSON.stringify(db,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='klaverjas-backup.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}document.getElementById('exportBtn').onclick=exportBackup;document.getElementById('backupBtn').onclick=exportBackup;document.getElementById('importBtn').onclick=()=>document.getElementById('importFile').click();document.getElementById('importFile').onchange=async e=>{try{let f=e.target.files[0];if(!f)return;let d=JSON.parse(await f.text());if(!Array.isArray(d.players)||!Array.isArray(d.pots))throw Error();db=d;save();render();toast('Back-up teruggezet')}catch(err){toast('Ongeldige back-up')}e.target.value=''};document.getElementById('clearHistory').onclick=()=>{if(confirm('Weet je zeker dat je alle potjes, rondes en klassementen wilt wissen? Spelers blijven behouden.')){db.pots=[];db.current=null;save();render();toast('Historie gewist')}};
 render();if(!db.current){document.getElementById('potStatus').innerHTML='<div class="toolbar" style="margin-top:12px"><button class="secondary" id="startPot">＋ Start nieuw potje</button></div>';document.getElementById('startPot').onclick=newPot}else if(!db.current.rounds.length){document.getElementById('potStatus').innerHTML='<div class="toolbar" style="margin-top:12px"><button class="secondary" id="startPot">Nieuw potje starten</button></div>';document.getElementById('startPot').onclick=newPot}
 
