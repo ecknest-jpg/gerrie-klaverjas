@@ -1,4 +1,4 @@
-const CACHE='klaverjas-test-pages-v6';
+const CACHE='klaverjas-test-pages-v7';
 const INDEX_URL=new URL('./index.html',self.registration.scope).href;
 const FILES=['./','./index.html','./manifest.webmanifest','../icon-192.png','../icon-512.png'];
 
