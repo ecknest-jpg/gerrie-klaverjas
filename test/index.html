@@ -735,15 +735,15 @@ function createPotShareImage(pot){
 
  // Roem, NAT and PIT values in the three printed columns per team.
  const metrics=(x,score)=>{
-  right(fmt(score.roem),x+169,717,27,19,navy,'800');
-  right(fmt(score.nat),x+343,717,27,19,navy,'800');
-  right(fmt(score.pit),x+515,717,27,19,navy,'800');
+  right(fmt(score.roem),x+178,717,15,13,navy,'800');
+  right(fmt(score.nat),x+343,717,20,16,navy,'800');
+  right(fmt(score.pit),x+515,717,20,16,navy,'800');
  };
  metrics(88,sum.wij);
  metrics(636,sum.zij);
 
  // Winner text is placed on the open gold banner, beneath the printed WINNAAR badge.
- fit(winnerText,626,923,790,74,31,navy,'900');
+ fit(winnerText,580,923,690,70,28,navy,'900');
 
  // Round count in the original empty light-blue capsule.
  const rounds=(pot.rounds||[]).length;
