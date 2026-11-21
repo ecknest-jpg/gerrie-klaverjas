@@ -9,7 +9,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="apple-touch-icon" href="icon-192.png">
-<title>Klaverjas 2.19 – score-invoer reset</title>
+<title>Klaverjas 2.20 – WhatsApp uitslagkaart</title>
 <style>
 :root{--bg:#f3f5f8;--card:#fff;--ink:#172033;--muted:#667085;--line:#e4e8ef;--blue:#365cf5;--blue2:#eaf0ff;--green:#16845b;--greenbg:#e8f6ef;--red:#d83c55;--redbg:#fff0f2;--amber:#a86b00;--amberbg:#fff5df;--shadow:0 8px 28px rgba(20,35,60,.07)}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;font-size:15px}button,input,select{font:inherit}button{cursor:pointer;border:0} .app{max-width:1040px;margin:auto;padding:16px 16px 42px}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}.brand{font-size:21px;font-weight:800;letter-spacing:-.5px}.brand small{display:block;font-size:10px;color:var(--muted);letter-spacing:1.4px;margin-top:3px}.top-actions{display:flex;gap:8px}.iconbtn,.tab{background:white;border:1px solid var(--line);border-radius:12px;padding:10px 12px;color:var(--ink);font-weight:650}.tabs{display:flex;gap:7px;overflow:auto;margin:0 0 14px}.tab{white-space:nowrap;font-size:13px}.tab.active{background:var(--blue);border-color:var(--blue);color:#fff}.panel{display:none}.panel.active{display:block}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:16px;margin-bottom:14px}.eyebrow{font-size:10px;font-weight:800;letter-spacing:1.3px;color:var(--muted);text-transform:uppercase}.scorehead{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}.scorebox{background:#f7f8fb;border:1px solid var(--line);border-radius:16px;padding:13px}.scorebox .teamname{font-weight:750;font-size:14px}.score{font-size:34px;font-weight:850;letter-spacing:-1px;line-height:1.15;margin:8px 0 4px;font-variant-numeric:tabular-nums}.progress{height:6px;background:#e5e9f0;border-radius:9px;overflow:hidden}.progress span{display:block;height:100%;background:var(--blue);border-radius:9px}.sub{font-size:11px;color:var(--muted);margin-top:5px}.section-title{font-size:17px;font-weight:800;letter-spacing:-.3px;margin:0 0 12px}.round-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.pill{border-radius:999px;background:var(--blue2);color:var(--blue);font-size:11px;font-weight:800;padding:6px 10px}.teams{display:grid;grid-template-columns:1fr 1fr;gap:10px}.team{min-width:0;border:1px solid var(--line);border-radius:17px;padding:12px;background:#fff}.team h3{font-size:15px;margin:0 0 3px}.team .members{font-size:11px;color:var(--muted);min-height:28px}.teamtotal{font-size:26px;font-weight:850;font-variant-numeric:tabular-nums;margin:8px 0}.field{width:100%;border:1px solid #d9dee8;background:#fff;border-radius:10px;padding:12px 10px;outline:none;min-width:0}.field:focus{border-color:var(--blue);box-shadow:0 0 0 3px #365cf51a}.field-label{font-size:11px;color:var(--muted);font-weight:700;display:block;margin:8px 0 5px}.mini-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:9px}.action{border:1px solid var(--line);background:#fff;border-radius:9px;padding:10px 2px;font-size:11px;font-weight:800}.action.nat{border-top:3px solid var(--red)}.action.verz{border-top:3px solid #e8ad2c}.action.pit{border-top:3px solid #81a83b}.action:disabled{opacity:.32;cursor:not-allowed;filter:grayscale(1)}.action.selected{background:#f1f3f7;box-shadow:inset 0 0 0 1px currentColor}.action.nat.selected{color:var(--red);background:var(--redbg)}.action.verz.selected{color:var(--amber);background:var(--amberbg)}.action.pit.selected{color:var(--green);background:var(--greenbg)}.roemline{display:flex;align-items:center;justify-content:space-between;margin:13px 0 7px;font-size:12px;font-weight:800}.roemtotal{font-size:20px;font-weight:850;color:var(--green);font-variant-numeric:tabular-nums}.roemgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}.roembtn{background:#f8fafc;border:1px solid #dce3ed;border-radius:9px;padding:11px 2px;font-weight:800;font-size:13px;color:#26344c}.roembtn:active{background:var(--blue2);border-color:var(--blue)}.roemgrid .wide{grid-column:span 1}.wide2{grid-column:span 2}.settingsrow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}.hint{font-size:11px;color:var(--muted);line-height:1.45;margin-top:8px}.primary{width:100%;padding:15px;border-radius:13px;background:var(--blue);color:#fff;font-weight:800;font-size:15px;box-shadow:0 5px 14px #365cf52b}.secondary{padding:11px 13px;border-radius:11px;background:#f6f7fa;border:1px solid var(--line);font-weight:700;color:var(--ink)}.danger{color:var(--red)}.status{font-size:12px;font-weight:750;margin-top:10px;padding:9px 10px;border-radius:10px;background:#f7f8fb}.status.warn{background:var(--amberbg);color:var(--amber)}.status.good{background:var(--greenbg);color:var(--green)}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:480px;font-size:12px}th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:right;font-variant-numeric:tabular-nums}th:first-child,td:first-child{text-align:left}th{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.7px}.empty{padding:22px;text-align:center;color:var(--muted);font-size:13px}.toolbar{display:flex;gap:8px;flex-wrap:wrap}.toolbar button{flex:1}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.formgrid label{font-size:11px;color:var(--muted);font-weight:700}.formgrid input,.formgrid select{display:block;margin-top:5px;width:100%}.leader-tabs{display:flex;gap:7px;margin-bottom:12px}.leader-tabs button{flex:1}.small{font-size:11px;color:var(--muted)}.winner{background:var(--greenbg);color:var(--green);border-radius:13px;padding:12px;font-weight:800;margin-top:10px}.modalback{position:fixed;inset:0;background:#10182788;display:none;align-items:flex-end;justify-content:center;padding:12px;z-index:10}.modalback.show{display:flex}.modal{width:min(100%,520px);background:white;border-radius:20px;padding:18px;max-height:85vh;overflow:auto}.modalback.result-show{align-items:center;padding:18px}.modal.result-modal{width:min(100%,480px);border-radius:26px;padding:22px;background:linear-gradient(180deg,#fff 0%,#f8faff 100%);box-shadow:0 24px 80px #07152b55}.result-hero{text-align:center;padding:8px 4px 16px}.result-trophy{font-size:58px;line-height:1.2;filter:drop-shadow(0 5px 8px #d6a32d55)}.result-title{font-size:25px;font-weight:900;letter-spacing:-.7px;margin:7px 0 3px}.result-sub{font-size:12px;color:var(--muted)}.playing-cards{display:flex;justify-content:center;gap:8px;margin:14px 0 2px}.playing-card{width:48px;height:64px;border:1px solid #dce2ec;border-radius:9px;background:#fff;box-shadow:0 5px 12px #1c2d4817;display:flex;align-items:center;justify-content:center;font-size:26px;transform:rotate(-8deg)}.playing-card:nth-child(2){transform:translateY(-5px) rotate(2deg);color:#d83c55}.playing-card:nth-child(3){transform:rotate(9deg);color:#d83c55}.winner-result{border:2px solid #e5c66d;background:linear-gradient(135deg,#fff9e7,#fff);border-radius:19px;padding:15px;margin:8px 0 12px}.winner-result .teamname{font-size:15px;font-weight:850}.winner-result .bigscore{font-size:38px;font-weight:950;letter-spacing:-1px;margin:5px 0;font-variant-numeric:tabular-nums;color:#956300}.result-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:10px}.result-stat{background:#ffffffc9;border:1px solid #eee4c9;border-radius:11px;padding:8px 5px;text-align:center}.result-stat b{display:block;font-size:17px;font-variant-numeric:tabular-nums}.result-stat span{display:block;font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;margin-top:3px}.opponent-result{background:#f0f3f8;border:1px solid #e1e6ef;border-radius:15px;padding:12px;margin:10px 0 15px}.opponent-result .bigscore{font-size:25px;font-weight:850;margin:3px 0}.opponent-result .result-stats{margin-top:7px}.opponent-result .result-stat{background:#fff;border-color:#e7ebf1}.result-modal .primary{margin-top:4px}.modal h2{margin:0 0 14px}.modal .field{margin-bottom:10px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#172033;color:white;padding:11px 16px;border-radius:99px;font-size:12px;display:none;z-index:20;box-shadow:var(--shadow)}
@@ -453,7 +453,7 @@
 </style></head>
 <body><main class="app">
 <header class="top"><div class="brand">♣ Klaverjas<small>SCORE · HISTORIE · KLASSEMENT</small></div><div class="top-actions"><button class="iconbtn" id="playersBtn">Spelers</button><button class="iconbtn" id="backupBtn" aria-label="Back-up">↧</button></div></header>
-<div id="appVersion">APPVERSIE 2.19 · SCORE-INVOER RESET</div>
+<div id="appVersion">APPVERSIE 2.20 · WHATSAPP UITSLAGKAART</div>
 <div id="wakeStatus" class="wake-status" role="status" aria-live="polite">Tik in Spelen om het scherm aan te houden</div>
 <nav class="tabs"><button class="tab active" data-tab="play">Spelen</button><button class="tab" data-tab="leader">Klassement</button><button class="tab" data-tab="history">Historie</button><button class="tab" data-tab="settings">Beheer</button></nav>
 <section class="panel active" id="play">
@@ -653,55 +653,73 @@ function drawShareWrapped(ctx,text,x,y,maxWidth,lineHeight,maxLines){
  return y+lines.length*lineHeight;
 }
 function createPotShareImage(pot){
- const sum=potSummary(pot);
- const canvas=document.createElement('canvas');
- canvas.width=1080;canvas.height=1350;
- const ctx=canvas.getContext('2d');
- if(!ctx)return null;
- const gradient=ctx.createLinearGradient(0,0,1080,1350);
- gradient.addColorStop(0,'#14233b');gradient.addColorStop(1,'#263f62');
- ctx.fillStyle=gradient;ctx.fillRect(0,0,1080,1350);
- ctx.fillStyle='#dfbd79';ctx.font='900 46px Arial';ctx.fillText('♣ KLAVERJAS',78,112);
- ctx.fillStyle='#d8e0ec';ctx.font='600 27px Arial';
- ctx.fillText('UITSLAG  ·  '+new Date(pot.endDate||pot.date).toLocaleDateString('nl-NL'),80,164);
- shareCanvasRoundRect(ctx,60,210,960,1045,34);ctx.fillStyle='#f5f7fb';ctx.fill();
- const left=pot.teams.wij.join(' & '),right=pot.teams.zij.join(' & ');
- const totalWij=fmt(sum.wij.points),totalZij=fmt(sum.zij.points);
- ctx.textAlign='center';ctx.fillStyle='#65738a';ctx.font='800 25px Arial';
- ctx.fillText('EINDSTAND',540,278);
- ctx.fillStyle='#17263d';ctx.font='900 94px Arial';
- ctx.fillText(totalWij+'  —  '+totalZij,540,395);
- ctx.fillStyle='#65738a';ctx.font='700 22px Arial';ctx.fillText('WIJ',300,443);ctx.fillText('ZIJ',780,443);
- ctx.textAlign='left';
- shareCanvasRoundRect(ctx,105,500,870,215,22);ctx.fillStyle='#e9eef5';ctx.fill();
- ctx.fillStyle='#182940';ctx.font='900 36px Arial';
- let nameTop=drawShareWrapped(ctx,left,145,548,720,44,2);
- let nameBottom=drawShareWrapped(ctx,right,600,548,720,44,2);
- ctx.fillStyle='#596981';ctx.font='600 24px Arial';
- ctx.fillText('Punten   '+fmt(sum.wij.points),145,645);
- ctx.fillText('Roem   '+fmt(sum.wij.roem)+'     NAT   '+sum.wij.nat+'     PIT   '+sum.wij.pit,145,685);
- ctx.fillText('Punten   '+fmt(sum.zij.points),600,645);
- ctx.fillText('Roem   '+fmt(sum.zij.roem)+'     NAT   '+sum.zij.nat+'     PIT   '+sum.zij.pit,600,685);
- const winner=pot.winner==='Gelijkspel'?'GELIJKSPEL':pot.teams[pot.winner].join(' & ').toUpperCase();
- shareCanvasRoundRect(ctx,105,780,870,190,24);ctx.fillStyle='#e9ddbd';ctx.fill();
- ctx.textAlign='center';ctx.fillStyle='#725622';ctx.font='800 25px Arial';ctx.fillText(pot.winner==='Gelijkspel'?'MOOI GESPEELD':'WINNAAR',540,840);
- ctx.fillStyle='#3a2e1d';ctx.font='900 43px Arial';drawShareWrapped(ctx,winner,540,902,770,52,2);
- ctx.fillStyle='#6b7788';ctx.font='600 23px Arial';ctx.fillText(pot.rounds.length+' rondes gespeeld',540,1060);
- ctx.fillStyle='#203652';ctx.font='800 24px Arial';ctx.fillText('Veel speelplezier!  ♣  ♥  ♦  ♠',540,1150);
- ctx.textAlign='left';
- try{
-  const data=canvas.toDataURL('image/png');
-  const parts=data.split(',');
-  const binary=atob(parts[1]);
-  const bytes=new Uint8Array(binary.length);
-  for(let i=0;i<binary.length;i++)bytes[i]=binary.charCodeAt(i);
-  return new File([bytes],'klaverjas-uitslag-'+new Date(pot.endDate||pot.date).toISOString().slice(0,10)+'.png',{type:'image/png'});
- }catch(error){return null;}
+ const sum=potSummary(pot),W=1254,H=1254;
+ const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[ch]));
+ const date=new Date(pot.endDate||pot.date||Date.now()),d=isNaN(date.getTime())?new Date():date;
+ const dateText=d.toLocaleDateString('nl-NL',{day:'2-digit',month:'2-digit',year:'numeric'});
+ const fileDate=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+ const wij=(pot.teams?.wij||[]).join(' & '),zij=(pot.teams?.zij||[]).join(' & ');
+ const key=pot.winner==='wij'||pot.winner==='zij'?pot.winner:null;
+ const winner=key?(pot.teams[key]||[]).join(' & ').toUpperCase():'GELIJKSPEL';
+ const rounds=(pot.rounds||[]).length;
+ const roundsLabel=rounds===1?'ronde':'rondes';
+ const teamNameFont=Math.max(wij.length,zij.length)>17?32:Math.max(wij.length,zij.length)>14?36:40;
+ const winnerFont=winner.length>22?42:winner.length>17?50:62;
+ const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 1254 1254">
+ <defs>
+ <radialGradient id="bg"><stop stop-color="#176fbd"/><stop offset=".62" stop-color="#07417d"/><stop offset="1" stop-color="#03152f"/></radialGradient>
+ <linearGradient id="red" x2="0" y2="1"><stop stop-color="#ff6541"/><stop offset=".5" stop-color="#c40018"/><stop offset="1" stop-color="#70000b"/></linearGradient>
+ <linearGradient id="blue" x2="0" y2="1"><stop stop-color="#187fe0"/><stop offset="1" stop-color="#06285f"/></linearGradient>
+ <linearGradient id="panel" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#d8ecff"/></linearGradient>
+ <linearGradient id="gold" x2="0" y2="1"><stop stop-color="#fff2a3"/><stop offset=".45" stop-color="#ffd64f"/><stop offset="1" stop-color="#c57b09"/></linearGradient>
+ <linearGradient id="green" x2="0" y2="1"><stop stop-color="#14a34c"/><stop offset="1" stop-color="#004a24"/></linearGradient>
+ <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="6"/><feOffset dy="4"/><feComponentTransfer><feFuncA type="linear" slope=".32"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ </defs>
+ <rect width="1254" height="1254" fill="url(#bg)"/>
+ <path d="M627 0L700 1254H554Z M0 627L1254 700V554Z M170 0L920 1254H840Z M1084 0L334 1254H414Z" fill="#63b7ff" opacity=".07"/>
+ <rect x="18" y="18" width="1218" height="1218" rx="44" fill="none" stroke="#e9ad27" stroke-width="12"/><rect x="32" y="32" width="1190" height="1190" rx="36" fill="none" stroke="#fff0a5" stroke-width="3"/>
+ <g font-family="Georgia,serif" font-weight="bold" text-anchor="middle" filter="url(#shadow)"><text x="145" y="170" font-size="118" fill="#050a14" stroke="#ffd76c" stroke-width="5">♣</text><text x="78" y="220" font-size="75" fill="#d71932" stroke="#ffd76c" stroke-width="4">♦</text><text x="1090" y="145" font-size="105" fill="#e31e31" stroke="#ffd76c" stroke-width="4">♥</text><text x="1150" y="225" font-size="100" fill="#050a14" stroke="#ffd76c" stroke-width="4">♠</text></g>
+ <g filter="url(#shadow)" font-family="Georgia,serif" font-weight="bold"><g transform="translate(410 24) rotate(-13)"><rect width="112" height="150" rx="13" fill="#fff" stroke="#d8e0ec" stroke-width="3"/><text x="12" y="49" font-size="40" fill="#c5162d">J♦</text></g><g transform="translate(515 10) rotate(-5)"><rect width="112" height="150" rx="13" fill="#fff" stroke="#d8e0ec" stroke-width="3"/><text x="12" y="49" font-size="40" fill="#111">Q♣</text></g><g transform="translate(625 10) rotate(5)"><rect width="112" height="150" rx="13" fill="#fff" stroke="#d8e0ec" stroke-width="3"/><text x="12" y="49" font-size="40" fill="#c5162d">K♥</text></g><g transform="translate(735 25) rotate(13)"><rect width="112" height="150" rx="13" fill="#fff" stroke="#d8e0ec" stroke-width="3"/><text x="12" y="49" font-size="40" fill="#111">A♠</text></g></g>
+ <path d="M170 116Q627 65 1084 116L1065 254Q627 292 189 254Z" fill="url(#red)" stroke="#ffd45d" stroke-width="8" filter="url(#shadow)"/><text x="627" y="205" text-anchor="middle" font-family="Arial,sans-serif" font-size="78" font-weight="900" fill="#fff2b4" stroke="#7b2800" stroke-width="2" paint-order="stroke">♣ KLAVERJAS ♣</text>
+ <rect x="334" y="242" width="586" height="66" rx="32" fill="#071b43" stroke="#ffd45d" stroke-width="5" filter="url(#shadow)"/><text x="627" y="286" text-anchor="middle" font-family="Arial,sans-serif" font-size="38" font-weight="900" fill="#fff">UITSLAG · ${esc(dateText)}</text>
+ <rect x="48" y="322" width="1158" height="802" rx="48" fill="url(#panel)" stroke="#ffd34e" stroke-width="10" filter="url(#shadow)"/><rect x="62" y="336" width="1130" height="774" rx="38" fill="none" stroke="#fff" stroke-width="3"/>
+ <rect x="430" y="308" width="394" height="78" rx="36" fill="#082759" stroke="#ffd34e" stroke-width="6" filter="url(#shadow)"/><text x="627" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="46" font-weight="900" fill="#fff">EINDSTAND</text>
+ <text x="350" y="493" text-anchor="middle" font-family="Arial,sans-serif" font-size="116" font-weight="900" fill="#071b43">${esc(fmt(sum.wij.points))}</text><text x="904" y="493" text-anchor="middle" font-family="Arial,sans-serif" font-size="116" font-weight="900" fill="#071b43">${esc(fmt(sum.zij.points))}</text>
+ <rect x="260" y="516" width="184" height="57" rx="28" fill="url(#blue)"/><rect x="810" y="516" width="184" height="57" rx="28" fill="url(#blue)"/><text x="352" y="555" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="900" fill="#fff">WIJ</text><text x="902" y="555" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="900" fill="#fff">ZIJ</text>
+ <g filter="url(#shadow)"><rect x="78" y="592" width="548" height="190" rx="28" fill="url(#panel)" stroke="#5b9ddd" stroke-width="5"/><rect x="628" y="592" width="548" height="190" rx="28" fill="url(#panel)" stroke="#5b9ddd" stroke-width="5"/><path d="M81 620Q81 595 106 595H598Q623 595 623 620V672H81Z" fill="url(#blue)"/><path d="M631 620Q631 595 656 595H1148Q1173 595 1173 620V672H631Z" fill="url(#blue)"/></g>
+ <g font-family="Arial,sans-serif" fill="#fff" font-weight="900" font-size="${teamNameFont}" text-anchor="middle"><text x="352" y="649">${esc(wij)}</text><text x="902" y="649">${esc(zij)}</text></g>
+ <g font-family="Arial,sans-serif" fill="#071b43"><text x="106" y="713" font-size="30" font-weight="800">Punten</text><text x="352" y="713" font-size="42" font-weight="900" text-anchor="middle">${esc(fmt(sum.wij.points))}</text><text x="656" y="713" font-size="30" font-weight="800">Punten</text><text x="902" y="713" font-size="42" font-weight="900" text-anchor="middle">${esc(fmt(sum.zij.points))}</text></g>
+ <path d="M104 737H600M654 737H1150" stroke="#5795d0" stroke-width="2"/>
+ <g font-family="Arial,sans-serif" fill="#071b43" font-size="25" font-weight="800" text-anchor="middle"><text x="157" y="770">Roem</text><text x="241" y="770" font-weight="900">${esc(fmt(sum.wij.roem))}</text><text x="340" y="770">NAT</text><text x="405" y="770" font-weight="900">${esc(fmt(sum.wij.nat))}</text><text x="485" y="770">PIT</text><text x="555" y="770" font-weight="900">${esc(fmt(sum.wij.pit))}</text><text x="707" y="770">Roem</text><text x="791" y="770" font-weight="900">${esc(fmt(sum.zij.roem))}</text><text x="890" y="770">NAT</text><text x="955" y="770" font-weight="900">${esc(fmt(sum.zij.nat))}</text><text x="1035" y="770">PIT</text><text x="1105" y="770" font-weight="900">${esc(fmt(sum.zij.pit))}</text></g>
+ <rect x="124" y="840" width="1006" height="150" rx="38" fill="url(#gold)" stroke="#fff0a2" stroke-width="7" filter="url(#shadow)"/><rect x="420" y="808" width="414" height="76" rx="36" fill="url(#red)" stroke="#ffd34e" stroke-width="7" filter="url(#shadow)"/><text x="627" y="850" text-anchor="middle" font-family="Arial,sans-serif" font-size="48" font-style="italic" font-weight="900" fill="#fff">${key?'WINNAAR':'GELIJKSPEL'}</text><text x="627" y="932" text-anchor="middle" font-family="Arial,sans-serif" font-size="${winnerFont}" font-weight="900" fill="#071b43">${esc(winner)}</text>
+ <g font-family="Georgia,serif" font-size="90" fill="#e4a51d" stroke="#fff0a2" stroke-width="2"><text x="150" y="963">❧</text><text x="1104" y="963" text-anchor="end">❧</text></g>
+ <rect x="300" y="1004" width="654" height="68" rx="34" fill="#d9edff" stroke="#70a9d9" stroke-width="4"/><text x="627" y="1047" text-anchor="middle" font-family="Arial,sans-serif" font-size="40" font-weight="900" fill="#071b43">${rounds} ${roundsLabel} gespeeld</text>
+ <rect x="205" y="1120" width="844" height="84" fill="url(#green)" stroke="#ffd34e" stroke-width="6" filter="url(#shadow)"/><text x="627" y="1177" text-anchor="middle" font-family="Arial,sans-serif" font-size="43" font-weight="900" font-style="italic" fill="#fff">Veel speelplezier! ♣ ♥ ♠ ♦</text>
+ </svg>`;
+ return new Promise(resolve=>{
+  let url=null;
+  try{
+   url=URL.createObjectURL(new Blob([svg],{type:'image/svg+xml;charset=utf-8'}));
+   const img=new Image();
+   img.onload=()=>{
+    try{
+     const canvas=document.createElement('canvas');canvas.width=W;canvas.height=H;
+     const ctx=canvas.getContext('2d',{alpha:false});
+     if(!ctx){URL.revokeObjectURL(url);resolve(null);return;}
+     ctx.fillStyle='#061b3a';ctx.fillRect(0,0,W,H);ctx.drawImage(img,0,0,W,H);URL.revokeObjectURL(url);
+     canvas.toBlob(blob=>{if(!blob){resolve(null);return;}try{resolve(new File([blob],'klaverjas-uitslag-'+fileDate+'.png',{type:'image/png'}));}catch(error){resolve(null);}},'image/png');
+    }catch(error){URL.revokeObjectURL(url);resolve(null);}
+   };
+   img.onerror=()=>{if(url)URL.revokeObjectURL(url);resolve(null);};img.src=url;
+  }catch(error){if(url)URL.revokeObjectURL(url);resolve(null);}
+ });
 }
-function sharePotResult(pot){
+
+async function sharePotResult(pot){
  const shareText=buildPotShareText(pot);
- const imageFile=createPotShareImage(pot);
- if(imageFile&&navigator.share&&navigator.canShare){
+ const imageFile=await createPotShareImage(pot);
+ if(!imageFile){toast('De uitslagkaart kon niet worden gemaakt. Probeer het opnieuw.');return;}
+ if(navigator.share&&navigator.canShare){
   try{
    if(navigator.canShare({files:[imageFile]})){
     navigator.share({files:[imageFile],title:'Klaverjas uitslag',text:shareText})
@@ -711,12 +729,10 @@ function sharePotResult(pot){
    }
   }catch(error){}
  }
- if(imageFile){
-  const url=URL.createObjectURL(imageFile);
-  const a=document.createElement('a');a.href=url;a.download=imageFile.name;
-  document.body.appendChild(a);a.click();a.remove();
-  setTimeout(()=>URL.revokeObjectURL(url),30000);
- }
+ const url=URL.createObjectURL(imageFile);
+ const a=document.createElement('a');a.href=url;a.download=imageFile.name;
+ document.body.appendChild(a);a.click();a.remove();
+ setTimeout(()=>URL.revokeObjectURL(url),30000);
  const whatsapp='https://wa.me/?text='+encodeURIComponent(shareText);
  const w=window.open(whatsapp,'_blank');
  if(!w)toast('Uitslagafbeelding gedownload. Deel deze samen met het WhatsApp-bericht.');
