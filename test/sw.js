@@ -1,6 +1,6 @@
-const CACHE='klaverjas-test-pages-v8';
+const CACHE='klaverjas-test-pages-v9';
 const INDEX_URL=new URL('./index.html',self.registration.scope).href;
-const FILES=['./','./index.html','./manifest.webmanifest','../icon-192.png','../icon-512.png','./share-template.webp'];
+const FILES=['./','./index.html','./manifest.webmanifest','../icon-192.png','../icon-512.png','./share-template.webp','./share-template-clean.webp'];
 
 self.addEventListener('install',event=>{
   event.waitUntil((async()=>{
