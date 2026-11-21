@@ -1084,7 +1084,7 @@ if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
     window.location.reload();
   });
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js', {updateViaCache:'none'})
+    navigator.serviceWorker.register('./sw.js?v=2.20', {updateViaCache:'none'})
       .then(registration => registration.update().catch(() => {}))
       .catch(() => {});
   });
